@@ -2,12 +2,28 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Jinho Choi at 2018-08-21 15:08:33 -0400 
+%% Created for Jinho Choi at 2018-08-21 17:47:16 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@jurthesis{zhou:18b,
+	Abstract = {In today's age of big data, automatic processing techniques are becoming more important than ever, especially in the field of biology and medicine. Many studies focus on genomic data, following the rise of high throughput sequencing; this project instead analyzes certain blood data parameters taken from rhesus macaques housed in Yerkes Primate Research Center at Emory University. The initial impetus for this study was the Joyner et al. 2016 paper, ``Plasmodium cynomolgi infections in rhesus macaques display clinical and parasitological features pertinent to modelling vivax malaria pathology and relapse infections" (Joyner et al., 2016). Joyner and his team follow the infection of malaria strain. cynomolgiin monkeys, taking blood data and other biological information daily.  While the paper discusses possible points of difference between monkeys of varying disease severity, we endeavored to find an automatic way to use these ``clinical and parasitological features" to characterize and predict aspects of the infection, including severity and stage of malaria. We propose to replicate existing analyses and to add new insights via various computational techniques. Machine learning is traditionally used for very large datasets, and thus this thesis, limited to a small dataset by the exorbitant cost of studying monkeys, intends to provide a proof of concept for automatically analyzing these types of data. The flow of computation is as follows: normalization of data, creation of mathematical models, residual calculation, formation of residual matrices, and lastly the generation of regression models. The aforementioned pro-cedure is then applied to shifted data for comparison, using Bayesian optimization. This study therefore provides a comprehensive framework for automatic analysis of medical data, which can be applied to other datasets.},
+	Address = {Atlanta, GA},
+	Annote = {This paper analyzes arguably the most challenging yet under-explored aspect of resolution tasks such as coreference resolution and entity linking, that is the resolution of plural mentions. Unlike singular mentions each of which represents one entity, plural mentions stand for multiple entities. To tackle this aspect, we take the character identification corpus from the SemEval 2018 shared task that consists of entity annotation for singular mentions, and expand it by adding annotation for plural mentions. We then introduce a novel coreference resolution algorithm that selectively creates clusters to handle both singular and plural mentions, and also a deep learning-based entity linking model that jointly handles both types of mentions through multi-task learning. Adjusted evaluation metrics are proposed for these tasks as well to handle the uniqueness of plural mentions. Our experiments show that the new coreference resolution and entity linking models significantly outperform traditional models designed only for singular mentions. To the best of our knowledge, this is the first time that plural mentions are thoroughly analyzed for these two resolution tasks.},
+	Author = {Zhou, Ethan},
+	Date-Added = {2018-08-21 21:43:38 +0000},
+	Date-Modified = {2018-08-21 21:47:16 +0000},
+	Keywords = {emorynlp},
+	Note = {Undergraduate Honors Thesis, Emory University, Atlanta, GA, 2018.},
+	School = {Emory University},
+	Title = {{A Thesis on Character Identification}},
+	Url = {https://www.slideshare.net/jchoi7s/a-thesis-on-character-identification},
+	Url_Slides = {https://www.slideshare.net/jchoi7s/monkeying-around-automatically-analyzing-malaria-infections-in-rhesus-macaques},
+	Year = {2018},
+	Bdsk-Url-1 = {https://etd.library.emory.edu/view/record/pid/emory:rj97r}}
 
 @jurthesis{ma:18b,
 	Abstract = {This paper presents a new corpus and a robust deep learning architecture for a task in reading comprehension, passage completion, on multiparty dialog. Given a dialog in text and a passage containing factual descriptions about the dialog where mentions of the characters are replaced by blanks, the task is to fill the blanks with the most appropriate character names that reflect the contexts in the dialog. Since there is no dataset that challenges the task of passage completion in this genre, we create a corpus by selecting transcripts from a TV show that comprise 1,682 dialogs, generating passages for each dialog through crowdsourcing, and annotating mentions of characters in both the dialog and the passages. Given this dataset, we build a deep neural model that integrates rich feature extraction from convolutional neural networks into sequence modeling in recurrent neural networks, optimized by utterance and dialog level attentions. Our model outperforms the previ- ous state-of-the-art model on this task in a dif- ferent genre using bidirectional LSTM, showing a 13.0+% improvement for longer dialogs. Our analysis shows the effectiveness of the attention mechanisms and suggests a direction to machine comprehension on multiparty dialog.},
