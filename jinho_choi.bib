@@ -2,12 +2,27 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Jinho Choi at 2018-08-21 17:47:16 -0400 
+%% Created for Jinho Choi at 2018-08-21 17:53:22 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@phdthesis{jurczyk:18b,
+	Abstract = {This thesis focuses on the optimization of NLP components for robustness and scalability. Three kinds of nlp components are used for our experiments, a part-of-speech tagger, a dependency parser, and a semantic role labeler. For part-of-speech tagging, dynamic model selection is introduced. Our dynamic model selection approach builds two models, domain-specific and generalized models, and selects one of them during decoding by comparing similarities between lexical items used for building these models and input sentences. As a result, it gives robust tagging accuracy across corpora and shows fast tagging speed. For dependency parsing, a new transition-based parsing algorithm and a bootstrapping technique are introduced. Our parsing algorithm learns both projective and non-projective transitions so it can generate both projective and non-projective dependency trees yet shows linear time parsing speed on average. Our bootstrapping technique bootstraps parse information used as features for transition-based parsing, and shows significant improvement for parsing accuracy. For semantic role labeling, a conditional higher-order argument pruning algorithm is introduced. A higher-order pruning algorithm improves the coverage of argument candidates and shows improvement on the overall F1-score. The conditional higher-order pruning algorithm also noticeably reduces average labeling complexity with minimal reduction in F1-score.
+
+For all experiments, two sets of training data are used; one is from the Wall Street Journal corpus, and the other is from the OntoNotes corpora. All components are evaluated on 9 different genres, which are grouped separately for in-genre and out-of-genre experiments. Our experiments show that our approach gives higher accuracies compared to other state-of-the-art nlp components, and runs fast, taking about 3-4 milliseconds per sentence for processing all three components. All components are publicly available as an open source project, called ClearNLP. We believe that this project is beneficial for many nlp tasks that need to process large-scale heterogeneous data.},
+	Author = {Jurczyk, Tomasz},
+	Date-Added = {2018-08-21 21:48:13 +0000},
+	Date-Modified = {2018-08-21 21:53:22 +0000},
+	Keywords = {emorynlp},
+	Organization = {Department of Mathematics and Computer Science},
+	School = {Emory University},
+	Title = {{Improving Question Answering by Bridging Linguistic Structures with Statistical Learning}},
+	Url_Slides = {https://www.slideshare.net/jchoi7s/improving-question-answering-by-bridging-linguistic-structures-with-statistical-learning},
+	Year = {2018},
+	Bdsk-Url-1 = {http://www.mathcs.emory.edu/~choi/doc/thesis-2012.pdf}}
 
 @jurthesis{zhou:18b,
 	Abstract = {In today's age of big data, automatic processing techniques are becoming more important than ever, especially in the field of biology and medicine. Many studies focus on genomic data, following the rise of high throughput sequencing; this project instead analyzes certain blood data parameters taken from rhesus macaques housed in Yerkes Primate Research Center at Emory University. The initial impetus for this study was the Joyner et al. 2016 paper, ``Plasmodium cynomolgi infections in rhesus macaques display clinical and parasitological features pertinent to modelling vivax malaria pathology and relapse infections" (Joyner et al., 2016). Joyner and his team follow the infection of malaria strain. cynomolgiin monkeys, taking blood data and other biological information daily.  While the paper discusses possible points of difference between monkeys of varying disease severity, we endeavored to find an automatic way to use these ``clinical and parasitological features" to characterize and predict aspects of the infection, including severity and stage of malaria. We propose to replicate existing analyses and to add new insights via various computational techniques. Machine learning is traditionally used for very large datasets, and thus this thesis, limited to a small dataset by the exorbitant cost of studying monkeys, intends to provide a proof of concept for automatically analyzing these types of data. The flow of computation is as follows: normalization of data, creation of mathematical models, residual calculation, formation of residual matrices, and lastly the generation of regression models. The aforementioned pro-cedure is then applied to shifted data for comparison, using Bayesian optimization. This study therefore provides a comprehensive framework for automatic analysis of medical data, which can be applied to other datasets.},
