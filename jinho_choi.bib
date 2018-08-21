@@ -2,12 +2,40 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Jinho Choi at 2018-08-21 14:39:07 -0400 
+%% Created for Jinho Choi at 2018-08-21 15:07:28 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@jurthesis{ma:18b,
+	Abstract = {This paper presents a new corpus and a robust deep learning architecture for a task in reading comprehension, passage completion, on multiparty dialog. Given a dialog in text and a passage containing factual descriptions about the dialog where mentions of the characters are replaced by blanks, the task is to fill the blanks with the most appropriate character names that reflect the contexts in the dialog. Since there is no dataset that challenges the task of passage completion in this genre, we create a corpus by selecting transcripts from a TV show that comprise 1,682 dialogs, generating passages for each dialog through crowdsourcing, and annotating mentions of characters in both the dialog and the passages. Given this dataset, we build a deep neural model that integrates rich feature extraction from convolutional neural networks into sequence modeling in recurrent neural networks, optimized by utterance and dialog level attentions. Our model outperforms the previ- ous state-of-the-art model on this task in a dif- ferent genre using bidirectional LSTM, showing a 13.0+% improvement for longer dialogs. Our analysis shows the effectiveness of the attention mechanisms and suggests a direction to machine comprehension on multiparty dialog.},
+	Address = {Atlanta, GA},
+	Author = {Ma, Kaixin},
+	Date-Added = {2018-08-21 19:05:20 +0000},
+	Date-Modified = {2018-08-21 19:07:28 +0000},
+	Keywords = {emorynlp},
+	Note = {Undergraduate Honors Thesis, Emory University, Atlanta, GA, 2018.},
+	School = {Emory University},
+	Title = {{Reading Comprehension on Multi-party Dialog}},
+	Url_Slides = {https://www.slideshare.net/jchoi7s/reading-comprehension-on-multiparty-dialog},
+	Year = {2018},
+	Bdsk-Url-1 = {https://etd.library.emory.edu/view/record/pid/emory:rj97r}}
+
+@jurthesis{chun:18b,
+	Abstract = {This thesis gives two contributions in the form of lexical resourcesto (1) dependency parsing in Korean and (2) semantic parsing in English. First,we describe our methodology for building three dependency treebanks in Korean derived from existing treebanks and pseudo-annotated according to the latest guidelines from the Universal Dependencies (UD). The original Google Korean UD Treebank is re-tokenized to ensure morpheme-level annotation consistency with other corpora while maintaining linguistic validity of the revised tokens. Phrase structure trees in the Penn Korean Treebank and the Kaist Treebank are automatically converted into UD dependency trees by applying head-percolation rules and linguistically motivated heuristics. A total of 38K+ dependency trees are generated.To the best of our knowledge, this is the first time that the three Korean treebanks are converted into UD dependency treebanks following the latest annotation guidelines. Second, we introduce an on-going project for augmenting the OntoNotes phrase structure treebank with semantic features found in the Abstract Meaning Representation (AMR), as part of an effort to build an accurate AMR parser. We propose a novel technique for AMR parsing that first trains a dependency parser on the OntoNotes corpus augmented with numbered arguments in the Proposition Bank (PropBank), and then does a transfer learning of the trained dependency parser for the AMR parsing task. A preliminary step is to prepare dependency data by performing an automatic replacement of dependencies that define predicate argument structure with their corresponding PropBank argument labels during constituent-to-dependency conversion. To the best of our knowledge, this is the first time that the PropBank labels are directly inserted into dependency structure, producing a new dependency corpus with rich syntactic information as well as semantic role information provided by PropBank that fully describes the predicate-argument structure, making it an ideal resource for AMR parsing and, broadly, semantic parsing.},
+	Address = {Atlanta, GA},
+	Author = {Hexter, Lindsay},
+	Date-Added = {2018-08-21 18:54:53 +0000},
+	Date-Modified = {2018-08-21 18:58:12 +0000},
+	Keywords = {emorynlp},
+	Note = {Undergraduate Honors Thesis, Emory University, Atlanta, GA, 2018.},
+	School = {Emory University},
+	Title = {{Dependency Analysis of Abstract Universal Structures in Korean and English}},
+	Url_Slides = {https://www.slideshare.net/jchoi7s/monkeying-around-automatically-analyzing-malaria-infections-in-rhesus-macaques},
+	Year = {2018},
+	Bdsk-Url-1 = {https://etd.library.emory.edu/view/record/pid/emory:rj97r}}
 
 @inproceedings{kanayama:18a,
 	Abstract = {This paper discusses the representation of coordinate structures in the Universal Dependencies framework for two head-final languages, Japanese and Korean. UD applies a strict principle that makes the head of coordination the left-most conjunct. However, the guideline may produce syntactic trees which are difficult to accept in head-final languages. This paper describes the status in the current corpora and proposes alternative designs suitable for these languages.},
@@ -30,28 +58,26 @@ In this paper we propose a thorough analysis of the various lexical and grammati
 	Address = {Atlanta, GA},
 	Author = {Jiang, Hang},
 	Date-Added = {2018-07-10 17:06:27 +0000},
-	Date-Modified = {2018-07-10 17:07:13 +0000},
+	Date-Modified = {2018-08-21 18:49:57 +0000},
 	Keywords = {emorynlp},
 	Note = {Undergraduate Honors Thesis, Emory University, Atlanta, GA, 2018.},
 	School = {Emory University},
 	Title = {{Automatic Personality Prediction with Attention-based Neural Networks}},
+	Url_Slides = {https://www.slideshare.net/jchoi7s/automatic-personality-prediction-with-attentionbased-neural-networks},
 	Year = {2018},
 	Bdsk-Url-1 = {https://etd.library.emory.edu/view/record/pid/emory:rj97r}}
 
 @jurthesis{hexter:18a,
-	Abstract = {Distributional Semantic word representation allows Natural Language Processing systems to extract and model an immense amount of information about a language. This technique maps words into a high dimensional continuous space through the use of a single-layer neural network. This process has allowed for advances in many Natural Language Processing research areas and tasks. These representation models are evaluated with the use of analogy tests, questions of the form ``If a is to a' then b is to what?'' are answered by composing multiple word vectors and searching the vector space.
-
-During the neural network training process, each word is examined as a member of its context. Generally, a word's context is considered to be the elements adjacent to it within a sentence. While some work has been conducted examining the effect of expanding this definition, very little exploration has been done in this area. Further, no inquiry has been conducted as to the specific linguistic competencies of these models or whether modifying their contexts impacts the information they extract.
-
-In this paper we propose a thorough analysis of the various lexical and grammatical competencies of distributional semantic models. We aim to leverage analogy tests to evaluate the most advanced distributional model across 14 different types of linguistic relationships. With this information we will then be able to investigate as to whether modifying the training context renders any differences in quality across any of these categories. Ideally we will be able to identify approaches to training that increase precision in some specific linguistic categories, which will allow us to investigate whether these improvements can be combined by joining the information used in different training approaches to build a single, improved, model.},
+	Abstract = {In today's age of big data, automatic processing techniques are becoming more important than ever, especially in the field of biology and medicine. Many studies focus on genomic data, following the rise of high throughput sequencing; this project instead analyzes certain blood data parameters taken from rhesus macaques housed in Yerkes Primate Research Center at Emory University. The initial impetus for this study was the Joyner et al. 2016 paper, ``Plasmodium cynomolgi infections in rhesus macaques display clinical and parasitological features pertinent to modelling vivax malaria pathology and relapse infections" (Joyner et al., 2016). Joyner and his team follow the infection of malaria strain. cynomolgiin monkeys, taking blood data and other biological information daily.  While the paper discusses possible points of difference between monkeys of varying disease severity, we endeavored to find an automatic way to use these ``clinical and parasitological features" to characterize and predict aspects of the infection, including severity and stage of malaria. We propose to replicate existing analyses and to add new insights via various computational techniques. Machine learning is traditionally used for very large datasets, and thus this thesis, limited to a small dataset by the exorbitant cost of studying monkeys, intends to provide a proof of concept for automatically analyzing these types of data. The flow of computation is as follows: normalization of data, creation of mathematical models, residual calculation, formation of residual matrices, and lastly the generation of regression models. The aforementioned pro-cedure is then applied to shifted data for comparison, using Bayesian optimization. This study therefore provides a comprehensive framework for automatic analysis of medical data, which can be applied to other datasets.},
 	Address = {Atlanta, GA},
 	Author = {Hexter, Lindsay},
 	Date-Added = {2018-07-10 16:44:19 +0000},
-	Date-Modified = {2018-07-10 17:07:05 +0000},
+	Date-Modified = {2018-08-21 19:02:49 +0000},
 	Keywords = {emorynlp},
 	Note = {Undergraduate Honors Thesis, Emory University, Atlanta, GA, 2018.},
 	School = {Emory University},
 	Title = {{Monkeying Around: Automatically Analyzing Malaria Infections in Rhesus Macaques}},
+	Url_Slides = {https://www.slideshare.net/jchoi7s/monkeying-around-automatically-analyzing-malaria-infections-in-rhesus-macaques},
 	Year = {2018},
 	Bdsk-Url-1 = {https://etd.library.emory.edu/view/record/pid/emory:rj97r}}
 
@@ -116,11 +142,12 @@ In this paper we propose a thorough analysis of the various lexical and grammati
 	Bdsk-Url-1 = {https://arxiv.org/abs/1801.02073}}
 
 @inproceedings{ma:18a,
+	Abstract = {This paper presents a new corpus and a robust deep learning architecture for a task in reading comprehension, passage completion, on multiparty dialog. Given a dialog in text and a passage containing factual descriptions about the dialog where mentions of the characters are replaced by blanks, the task is to fill the blanks with the most appropriate character names that reflect the contexts in the dialog. Since there is no dataset that challenges the task of passage completion in this genre, we create a corpus by selecting transcripts from a TV show that comprise 1,682 dialogs, generating passages for each dialog through crowdsourcing, and annotating mentions of characters in both the dialog and the passages. Given this dataset, we build a deep neural model that integrates rich feature extraction from convolutional neural networks into sequence modeling in recurrent neural networks, optimized by utterance and dialog level attentions. Our model outperforms the previ- ous state-of-the-art model on this task in a dif- ferent genre using bidirectional LSTM, showing a 13.0+% improvement for longer dialogs. Our analysis shows the effectiveness of the attention mechanisms and suggests a direction to machine comprehension on multiparty dialog.},
 	Address = {New Orleans, LA},
 	Author = {Ma, Kaixin and Jurczyk, Tomasz and Choi, Jinho D.},
 	Booktitle = {Proceedings of the 16th Annual Conference of the North American Chapter of the Association for Computational Linguistics},
 	Date-Added = {2018-02-14 21:37:32 +0000},
-	Date-Modified = {2018-07-03 20:08:31 +0000},
+	Date-Modified = {2018-08-21 19:06:27 +0000},
 	Keywords = {emorynlp,selected,character-mining},
 	Pages = {2039--2048},
 	Series = {NAACL'18},
@@ -753,12 +780,13 @@ This project takes a foundational step towards bringing the field of clinical NL
 	Address = {Atlanta, GA},
 	Author = {Chen, Henry Yu-Hsin},
 	Date-Added = {2017-04-17 16:05:12 +0000},
-	Date-Modified = {2018-04-06 16:53:36 +0000},
+	Date-Modified = {2018-08-21 18:43:58 +0000},
 	Keywords = {emorynlp},
 	Note = {Undergraduate Honors Thesis, Emory University, Atlanta, GA, 2017.},
 	School = {Emory University},
 	Title = {{Character Identification on Multi-party Dialogues}},
 	Url = {http://pid.emory.edu/ark:/25593/rxf6s},
+	Url_Paper = {https://legacy-etd.library.emory.edu/file/view/pid/emory:rzvwv/etd/emory:rxf6s/chen_dissertation.pdf},
 	Url_Slides = {https://www.slideshare.net/jchoi7s/character-identification-on-multiparty-dialogues},
 	Year = {2017},
 	Bdsk-Url-1 = {https://etd.library.emory.edu/view/record/pid/emory:pjw0g}}
@@ -842,13 +870,13 @@ This project takes a foundational step towards bringing the field of clinical NL
 @unpublished{chen:15a,
 	Author = {Chen, Henry Yu-Hsin and Choi, Jinho D.},
 	Date-Added = {2016-07-13 02:16:36 +0000},
-	Date-Modified = {2018-08-17 17:07:14 +0000},
+	Date-Modified = {2018-08-21 18:41:14 +0000},
 	Keywords = {emorynlp},
 	Note = {Summer Undergraduate Research Program at Emory (SURE).},
 	Organization = {Emory University},
 	Title = {{Unsupervised Main Entity Extraction from News Articles using Latent Variables}},
 	Url = {http://college.emory.edu/undergraduate-research/summer-programs},
-	Url_Slides = {https://www.researchgate.net/publication/327077263_Unsupervised_Main_Entity_Extraction_from_News_Articles_using_Latent_Variables},
+	Url_Slides = {https://www.slideshare.net/jchoi7s/unsupervised-main-entity-extraction-from-news-articles-using-latent-variables},
 	Year = {2015},
 	Bdsk-Url-1 = {http://college.emory.edu/undergraduate-research/summer-programs}}
 
@@ -900,14 +928,14 @@ This project takes a foundational step towards bringing the field of clinical NL
 	Address = {Atlanta, GA},
 	Author = {Hahn, Meera Satya},
 	Date-Added = {2016-07-01 22:41:00 +0000},
-	Date-Modified = {2018-08-17 17:54:13 +0000},
+	Date-Modified = {2018-08-21 18:42:33 +0000},
 	Keywords = {emorynlp},
 	Note = {Undergraduate Honors Thesis, Emory University, Atlanta, GA, 2016.},
 	School = {Emory University},
 	Title = {{Advances in Methods and Evaluations for Distributional Semantic Models using Computational Lexicons}},
 	Url = {http://pid.emory.edu/ark:/25593/rj67f},
 	Url_Paper = {https://legacy-etd.library.emory.edu/file/view/pid/emory:rjgz5/etd/emory:rj67f/hahn_dissertation.pdf},
-	Url_Slides = {https://www.researchgate.net/publication/327078787_Advances_in_Methods_and_Evaluations_for_Distributional_Semantic_Models_using_Computational_Lexicons},
+	Url_Slides = {https://www.slideshare.net/jchoi7s/advances-in-methods-and-evaluations-for-distributional-semantic-models-using-computational-lexicons},
 	Year = {2016},
 	Bdsk-Url-1 = {https://etd.library.emory.edu/view/record/pid/emory:rj67f}}
 
@@ -920,14 +948,14 @@ In this paper we propose a thorough analysis of the various lexical and grammati
 	Address = {Atlanta, GA},
 	Author = {Kilgore, Andrew Reid},
 	Date-Added = {2016-07-01 22:39:56 +0000},
-	Date-Modified = {2018-08-17 17:31:53 +0000},
+	Date-Modified = {2018-08-21 18:42:08 +0000},
 	Keywords = {emorynlp},
 	Note = {Undergraduate Honors Thesis, Emory University, Atlanta, GA, 2016.},
 	School = {Emory University},
 	Title = {{Categorical Evaluation for Advanced Distributional Semantic Models}},
 	Url = {http://pid.emory.edu/ark:/25593/rj97r},
 	Url_Paper = {https://legacy-etd.library.emory.edu/file/view/pid/emory:rjb0w/etd/emory:rj97r/kilgore_dissertation.pdf},
-	Url_Slides = {https://www.researchgate.net/publication/327078770_Categorical_Evaluation_for_Advanced_Distributional_Semantic_Models},
+	Url_Slides = {https://www.slideshare.net/jchoi7s/categorical-evaluation-for-advanced-distributional-semantic-models},
 	Year = {2016},
 	Bdsk-Url-1 = {https://etd.library.emory.edu/view/record/pid/emory:rj97r}}
 
