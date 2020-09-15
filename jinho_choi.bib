@@ -1,12 +1,27 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Jinho Choi at 2020-09-11 13:41:58 -0400 
+%% Created for Jinho Choi at 2020-09-15 12:41:55 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{xu:20a,
+	Abstract = {This paper presents a reinforcement learning approach to extract noise in long clinical documents for the task of readmission prediction after kidney transplant. We face the challenges of developing robust models on a small dataset where each document may consist of over 10K tokens with full of noise including tabular text. %each patient can have thousands of tokens in noisy documents. We first experiment four types of encoders to empirically decide the best document representation, and then apply reinforcement learning to remove noisy text from the long documents, which models the noise extraction process as a sequential decision problem. Our results show that the old bag-of-words encoder outperforms deep learning-based encoders on this task, and reinforcement learning is able to improve upon baseline while pruning out 25\% text segments. Our analysis depicts that reinforcement learning is able to identify both typical noisy tokens and task-specific noisy text.},
+	Author = {Xu, Liyan and Hogan, Julien and Patzer, Rachel E. and Choi, Jinho D.},
+	Booktitle = {Proceedings of the ACL Workshop on Biomedical Natural Language Processing},
+	Date-Added = {2020-09-15 12:39:29 -0400},
+	Date-Modified = {2020-09-15 12:39:29 -0400},
+	Keywords = {emorynlp; selected},
+	Pages = {95--104},
+	Series = {BioNLP'20},
+	Title = {{Noise Pollution in Hospital Readmission Prediction:Long Document Classification with Reinforcement Learning}},
+	Url = {https://aclweb.org/aclwiki/BioNLP_Workshop},
+	Url_Paper = {https://www.aclweb.org/anthology/2020.bionlp-1.10},
+	Year = {2020},
+	Bdsk-Url-1 = {https://acl2020.org/}}
 
 @inproceedings{li:20d,
 	Abstract = {This paper presents a new dataset, BSHARP, that can be used to develop NLP models for the detection of Mild Cognitive Impairment (MCI) known as an early sign of Alzheimer's disease. Our dataset contains 1-2 minute speeches from 326 human subjects for 3 topics, daily activity, room environment, and picture description, as well as their transcripts such that a total of 650 speeches are collected. Given BSHARP, several hierarchical text classification models are developed that jointly learn combinatory features across all 3 topics. The best result of 74.1% is achieved by an ensemble model that adapts 3 types of transformer encoders. To the best of our knowledge, this is the first work that builds deep learning-based text classification models on multiple contents for the detection of MCI.},
@@ -128,18 +143,16 @@
 	Year = {2020},
 	Bdsk-Url-1 = {https://acl2020.org/}}
 
-@inproceedings{xu:20a,
-	Abstract = {This paper presents a reinforcement learning approach to extract noise in long clinical documents for the task of readmission prediction after kidney transplant. We face the challenges of developing robust models on a small dataset where each document may consist of over 10K tokens with full of noise including tabular text. %each patient can have thousands of tokens in noisy documents. We first experiment four types of encoders to empirically decide the best document representation, and then apply reinforcement learning to remove noisy text from the long documents, which models the noise extraction process as a sequential decision problem. Our results show that the old bag-of-words encoder outperforms deep learning-based encoders on this task, and reinforcement learning is able to improve upon baseline while pruning out 25\% text segments. Our analysis depicts that reinforcement learning is able to identify both typical noisy tokens and task-specific noisy text.},
-	Author = {Xu, Liyan and Hogan, Julien and Patzer, Rachel E. and Choi, Jinho D.},
-	Booktitle = {Proceedings of the ACL Workshop on Biomedical Natural Language Processing},
+@inproceedings{xu:20b,
+	Abstract = {This paper analyzes the impact of higher-orderinference (HOI) on the task of coreference res-olution.  HOI has been adapted by almost allrecent coreference resolution models withouttaking much investigation on its true effectiveness over representation learning.  To make acomprehensive analysis, we implement an end-to-end coreference system as well as four HOI approaches, attended antecedent, entity equal-ization, span clustering, and cluster merging, where the latter two are our original methods.We find that given a high-performing encodersuch as SpanBERT, the impact of HOI is neg-ative to marginal, providing a new perspectiveof HOI to this task. Our best model using clus-ter merging shows the Avg-F1 of 80.2, that isthe new state-of-the-art result for this task.},
+	Author = {Xu, Liyan and Choi, Jinho D.},
+	Booktitle = {Proceedings of the Conference on Empirical Methods in Natural Language Processing},
 	Date-Added = {2020-04-29 00:49:29 -0400},
-	Date-Modified = {2020-07-20 18:26:26 -0400},
+	Date-Modified = {2020-09-15 12:41:12 -0400},
 	Keywords = {emorynlp; selected},
-	Pages = {95--104},
-	Series = {BioNLP'20},
-	Title = {{Noise Pollution in Hospital Readmission Prediction:Long Document Classification with Reinforcement Learning}},
-	Url = {https://aclweb.org/aclwiki/BioNLP_Workshop},
-	Url_Paper = {https://www.aclweb.org/anthology/2020.bionlp-1.10},
+	Series = {EMNLP'20},
+	Title = {{Revealing the Myth of Higher-Order Inference in Coreference Resolution}},
+	Url = {https://2020.emnlp.org/},
 	Year = {2020},
 	Bdsk-Url-1 = {https://acl2020.org/}}
 
