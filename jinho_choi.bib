@@ -1,12 +1,25 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Jinho Choi at 2020-09-15 12:41:55 -0400 
+%% Created for Jinho Choi at 2020-09-17 18:22:42 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{li:20e,
+	Abstract = {This paper presents a comprehensive study on resume classification to reduce the time and labor needed to screen an overwhelming number of applications significantly, while improving the selection of suitable candidates. A total of 6,492 resumes are extracted from 24,933 job applications for 252 positions designated into four levels of experience for Clinical ResearchCoordinators (CRC). Each resume is manually annotated to its most appropriate CRC position by experts through several rounds of triple annotation to establish guidelines.  As a result, a high Kappa score of 61% is achieved for inter-annotator agreement. Given this dataset, novel transformer-based classification models are developed for two tasks: the first task takes a resume and classifies it to a CRC level (T1), and the second task takes both a resume and a job description to apply and predicts if the application is suited to the job (T2). Our best models using section encoding and multi-head attention decoding give results of 73.3% toT1and79.2% toT2.  Our analysis shows that the prediction errors are mostly made among adjacent CRC levels, which are hard for even experts to distinguish, implying the practical value of our models in real HR platforms.},
+	Author = {Li, Changmao and Fisher, Elaine and Thomas, Rebecca and Pittard, Steve and Hertzberg, Vicki and Choi, Jinho D.},
+	Booktitle = {Proceedings of the Conference on Empirical Methods in Natural Language Processing},
+	Date-Added = {2020-09-17 18:17:19 -0400},
+	Date-Modified = {2020-09-17 18:21:08 -0400},
+	Keywords = {emorynlp; selected},
+	Series = {EMNLP'20},
+	Title = {{Competence-Level Prediction and Resume-Job_Description Matching Using Context-Aware Transformer Models}},
+	Url = {https://2020.emnlp.org/},
+	Year = {2020},
+	Bdsk-Url-1 = {https://acl2020.org/}}
 
 @inproceedings{xu:20a,
 	Abstract = {This paper presents a reinforcement learning approach to extract noise in long clinical documents for the task of readmission prediction after kidney transplant. We face the challenges of developing robust models on a small dataset where each document may consist of over 10K tokens with full of noise including tabular text. %each patient can have thousands of tokens in noisy documents. We first experiment four types of encoders to empirically decide the best document representation, and then apply reinforcement learning to remove noisy text from the long documents, which models the noise extraction process as a sequential decision problem. Our results show that the old bag-of-words encoder outperforms deep learning-based encoders on this task, and reinforcement learning is able to improve upon baseline while pruning out 25\% text segments. Our analysis depicts that reinforcement learning is able to identify both typical noisy tokens and task-specific noisy text.},
@@ -144,11 +157,11 @@
 	Bdsk-Url-1 = {https://acl2020.org/}}
 
 @inproceedings{xu:20b,
-	Abstract = {This paper analyzes the impact of higher-orderinference (HOI) on the task of coreference res-olution.  HOI has been adapted by almost allrecent coreference resolution models withouttaking much investigation on its true effectiveness over representation learning.  To make acomprehensive analysis, we implement an end-to-end coreference system as well as four HOI approaches, attended antecedent, entity equal-ization, span clustering, and cluster merging, where the latter two are our original methods.We find that given a high-performing encodersuch as SpanBERT, the impact of HOI is neg-ative to marginal, providing a new perspectiveof HOI to this task. Our best model using clus-ter merging shows the Avg-F1 of 80.2, that isthe new state-of-the-art result for this task.},
+	Abstract = {This paper analyzes the impact of higher-order inference (HOI) on the task of coreference resolution. HOI has been adapted by almost all recent coreference resolution models without taking much investigation on its true effectiveness over representation learning. To make a comprehensive analysis, we implement an end-to-end coreference system as well as four HOI approaches, attended antecedent, entity equalization, span clustering, and cluster merging, where the latter two are our original methods.We find that given a high-performing encoder such as SpanBERT, the impact of HOI is negative to marginal, providing a new perspective of HOI to this task. Our best model using cluster merging shows the Avg-F1 of 80.2, that is the new state-of-the-art result for this task.},
 	Author = {Xu, Liyan and Choi, Jinho D.},
 	Booktitle = {Proceedings of the Conference on Empirical Methods in Natural Language Processing},
 	Date-Added = {2020-04-29 00:49:29 -0400},
-	Date-Modified = {2020-09-15 12:41:12 -0400},
+	Date-Modified = {2020-09-17 16:39:43 -0400},
 	Keywords = {emorynlp; selected},
 	Series = {EMNLP'20},
 	Title = {{Revealing the Myth of Higher-Order Inference in Coreference Resolution}},
@@ -190,7 +203,7 @@
 	Address = {Atlanta, GA},
 	Author = {Li, Changmao},
 	Date-Added = {2020-04-08 12:29:02 -0400},
-	Date-Modified = {2020-04-08 13:39:14 -0400},
+	Date-Modified = {2020-09-17 16:40:44 -0400},
 	Keywords = {emorynlp},
 	Note = {MS Thesis, Emory University, Atlanta, GA, 2020.},
 	School = {Emory University},
@@ -256,11 +269,11 @@
 	Bdsk-Url-1 = {https://etd.library.emory.edu/view/record/pid/emory:rj97r}}
 
 @inproceedings{li:20a,
-	Abstract = {We introduce a novel approach to transformers that learns hierarchical representations in mul- tiparty dialogue. First, three language model- ing tasks are used to pre-train the transformers, token- and utterance-level language modeling and utterance order prediction, that learn both token and utterance embeddings for better understanding in dialogue contexts. Then, multi- task learning between the utterance prediction and the token span prediction is applied to fine-tune for span-based question answering (QA). Our approach is evaluated on the FriendQA dataset and shows improvements of 3.8% and 1.4% over the two state-of-the-art transformer models, BERT and RoBERTa, respectively.},
+	Abstract = {We introduce a novel approach to transformers that learns hierarchical representations in multiparty dialogue. First, three language model- ing tasks are used to pre-train the transformers, token- and utterance-level language modeling and utterance order prediction, that learn both token and utterance embeddings for better understanding in dialogue contexts. Then, multi-task learning between the utterance prediction and the token span prediction is applied to fine-tune for span-based question answering (QA). Our approach is evaluated on the FriendQA dataset and shows improvements of 3.8% and 1.4% over the two state-of-the-art transformer models, BERT and RoBERTa, respectively.},
 	Author = {Li, Changmao and Choi, Jinho D.},
 	Booktitle = {Proceedings of the Annual Conference of the Association for Computational Linguistics},
 	Date-Added = {2020-04-04 00:26:40 -0400},
-	Date-Modified = {2020-07-20 18:24:59 -0400},
+	Date-Modified = {2020-09-17 16:40:55 -0400},
 	Keywords = {character-mining; emorynlp; selected},
 	Pages = {5709---5714},
 	Series = {ACL'20},
