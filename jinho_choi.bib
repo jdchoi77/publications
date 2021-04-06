@@ -1,7 +1,7 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Jinho Choi at 2021-04-06 14:30:24 -0400 
+%% Created for Jinho Choi at 2021-04-06 14:34:28 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -9,11 +9,12 @@
 
 
 @inproceedings{lu:21a,
-	abstract = {This paper analyzes the impact of higher-order inference (HOI) on the task of coreference resolution. HOI has been adapted by almost all recent coreference resolution models without taking much investigation on its true effectiveness over representation learning. To make a comprehensive analysis, we implement an end-to-end coreference system as well as four HOI approaches, attended antecedent, entity equalization, span clustering, and cluster merging, where the latter two are our original methods.We find that given a high-performing encoder such as SpanBERT, the impact of HOI is negative to marginal, providing a new perspective of HOI to this task. Our best model using cluster merging shows the Avg-F1 of 80.2, that is the new state-of-the-art result for this task.},
+	abstract = {Salience Estimation aims to predict term importance in documents.
+Due to few existing human-annotated datasets and the subjective notion of salience, previous studies typically generate pseudo-ground truth for evaluation. However, our investigation reveals that the evaluation protocol proposed by prior work is difficult to replicate, thus leading to few follow-up studies existing. Moreover, the evaluation process is problematic: the entity linking tool used for entity matching is very noisy, while the ignorance of event argument for event evaluation leads to boosted performance. In this work, we propose a light yet practical entity and event salience estimation evaluation protocol, which incorporates the more reliable syntactic dependency parser. Furthermore, we conduct a comprehensive analysis among popular entity and event definition standards, and present our own definition for the Salience Estimation task to reduce noise during the pseudo-ground truth generation process. Furthermore, we construct dependency-based heterogeneous graphs to capture the interactions of entities and events. The empirical results show that both baseline methods and the novel GNN method utilizing the heterogeneous graph consistently outperform the previous SOTA model in all proposed metrics.},
 	author = {Lu, Jiaying and Choi, Jinho D.},
 	booktitle = {Proceedings of the 34th International Florida Artificial Intelligence Research Society Conference},
 	date-added = {2021-04-06 14:25:06 -0400},
-	date-modified = {2021-04-06 14:25:06 -0400},
+	date-modified = {2021-04-06 14:34:13 -0400},
 	keywords = {emorynlp; selected},
 	series = {FLAIRS'21},
 	title = {{Evaluation of Unsupervised Entity and Event Salience Estimation}},
@@ -193,11 +194,11 @@
 	Bdsk-Url-1 = {https://acl2020.org/}}
 
 @inproceedings{karisani:21a,
-	abstract = {This paper analyzes the impact of higher-order inference (HOI) on the task of coreference resolution. HOI has been adapted by almost all recent coreference resolution models without taking much investigation on its true effectiveness over representation learning. To make a comprehensive analysis, we implement an end-to-end coreference system as well as four HOI approaches, attended antecedent, entity equalization, span clustering, and cluster merging, where the latter two are our original methods.We find that given a high-performing encoder such as SpanBERT, the impact of HOI is negative to marginal, providing a new perspective of HOI to this task. Our best model using cluster merging shows the Avg-F1 of 80.2, that is the new state-of-the-art result for this task.},
+	abstract = {We present an algorithm based on multi-layer transformers for identifying Adverse Drug Reactions (ADR) in social media data. Our model relies on the properties of the problem and the characteristics of contextual word embeddings to extract two views from documents. Then a classifier is trained on each view to label a set of unlabeled documents to be used as an initializer for a new classifier in the other view. Finally, the initialized classifier in each view is further trained using the initial training examples. We evaluated our model in the largest publicly available ADR dataset. The experiments testify that our model significantly outperforms the transformer-based models pretrained on domain-specific data.},
 	author = {Karisani, Payam and Choi, Jinho D. and Xiong, Li},
 	booktitle = {Proceedings of the ACL Workshop on Social Media Mining for Health Applications},
 	date-added = {2020-04-29 00:49:29 -0400},
-	date-modified = {2021-04-06 14:28:19 -0400},
+	date-modified = {2021-04-06 14:32:55 -0400},
 	keywords = {emorynlp; selected},
 	series = {SMM4H'21},
 	title = {{View Distillation with Unlabeled Data for Extracting Adverse Drug Effects from User-Generated Data}},
