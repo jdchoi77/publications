@@ -1,12 +1,68 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Jinho Choi at 2021-04-14 14:52:10 -0400 
+%% Created for Jinho Choi at 2021-04-14 16:25:38 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@jurthesis{zhang:21a,
+	abstract = {While existing conversational agents are able to generate grammar-correct responses, the responses are often lack of personal expressions when users start to talk about themselves. This thesis aims to improve the engagement and naturalness of responses when responding to user profiles, such as personality traits, preferences, and experiences. Our main idea is to embed the emotion factors into the response generation task given user profiles. We first developed a profile classifier to identify whether a sentence is a profile or not. We also developed an emotion classifier with 32 emotion labels, which allows us to detect the emotion of any sentence. Then, we posted profiles extracted by the profile classifier and collected corresponding responses in two parts including exclamation and follow up. Using this dataset, we presented two models that concatenated the response emotion predicted by the emotion classifier either before or after the given utterance. The result shows that concatenating the desired emotion before the given utterance generates better results for the exclamation prediction task, and concatenating the desired emotion after the given utterance generates better results for the follow up prediction task. Overall, the generated responses are encouraging. Since the profile classifier allows us to extract profiles from a large dataset, it will be easy to generate more input data to the model and thus improve the quality of responses in the future.},
+	address = {Atlanta, GA},
+	author = {Zhang, Xinman},
+	date-added = {2021-04-14 16:20:05 -0400},
+	date-modified = {2021-04-14 16:20:05 -0400},
+	keywords = {emorynlp},
+	note = {Undergraduate Honors Thesis, Emory University, Atlanta, GA, 2021.},
+	school = {Emory University},
+	title = {{Automatic Generation of Emotion-Based Responses to User Profiles}},
+	url_slides = {https://www.researchgate.net/publication/350874298_Automatic_Generation_of_Emotion-Based_Responses_to_User_Profiles},
+	year = {2021},
+	Bdsk-Url-1 = {https://etd.library.emory.edu/view/record/pid/emory:rj97r}}
+
+@jurthesis{dong:21a,
+	abstract = {Transformer-based models have been widely used for many natural language processing tasks and shown excellent capability in capturing contextual information especially for document classification. Many existing transformer-based methods, however, even treat semi-structured text data as a block of text. These  methods tend to ignore the hierarchical information and semantic correlations hidden in semi-structured text data, which can be captured by graph-based network models. This paper proposes a novel graph representation of semi-structured resume data that considers the categorical and hierarchical relationship in resumes.  Our experiments show that our graph-based models outperform transformer methods for resume classification tasks and show better interpretability and generalization.},
+	address = {Atlanta, GA},
+	author = {Dong, Xiangjue},
+	date-added = {2021-04-14 16:12:47 -0400},
+	date-modified = {2021-04-14 16:22:54 -0400},
+	keywords = {emorynlp},
+	note = {MS Thesis, Emory University, Atlanta, GA, 2021.},
+	school = {Emory University},
+	title = {{Analysis of Graph-based Semi-Structured Categorical Model for Competence-Level Classification}},
+	url_slides = {https://www.researchgate.net/publication/350874298_Automatic_Generation_of_Emotion-Based_Responses_to_User_Profiles},
+	year = {2021},
+	Bdsk-Url-1 = {https://etd.library.emory.edu/view/record/pid/emory:rj97r}}
+
+@jurthesis{feng:21a,
+	abstract = {Many semantic annotations currently utilize Abstract Meaning Representation and PropBank frameset files to represent meaning. This scheme relies on arbitrary predicate-argument structures comprising unintuitive numbered arguments, fine-grained sense-disambiguation, and high start-up costs. To address these issues, we present a new annotation scheme, WISeN, that prioritizes semantic roles over numbered arguments and does away with sense-disambiguation. This scheme aims to be more intuitive for annotators and more interpretable by parsers. We evaluate this annotation scheme with a two-part experiment. First, we measure speed and accuracy of manual annotations. Second, we train a parser on both AMR and WISeN annotations and measure model accuracy. The results show that WISeN supports improved parser performance and increased inter-annotator agreement without sacrificing annotation speed compared to AMR. As such, we advocate for the adoption of WISeN as an annotation scheme for semantic representations.},
+	address = {Atlanta, GA},
+	author = {Feng, Lydia},
+	date-added = {2021-04-14 16:05:53 -0400},
+	date-modified = {2021-04-14 16:12:35 -0400},
+	keywords = {emorynlp},
+	note = {Undergraduate Honors Thesis, Emory University, Atlanta, GA, 2021.},
+	school = {Emory University},
+	title = {{WISeN: Widely Interpretable Semantic Network for Richer Meaning Representation}},
+	url_slides = {https://www.researchgate.net/publication/350874281_WISeN_Widely_Interpretable_Semantic_Network_for_Richer_Meaning_Representation},
+	year = {2021},
+	Bdsk-Url-1 = {https://etd.library.emory.edu/view/record/pid/emory:rj97r}}
+
+@jurthesis{xu:21a,
+	abstract = {This paper presents a new dataset, B-SHARP, which can be used to detect Mild Cognitive Impairment (MCI), an early stage of Alzheimer's Disease. The dataset contains 721 speech recordings from 144 MCI patients and 185 health controls, on three topics about daily activity, room environment and picture description. Given the B-SHARP dataset, several hierarchical transformer models on the text side based on the transcription and multiple speech models with different encoding methods based on acoustic information are developed. And finally, the model performance are evaluated and a comparison is drawn between text models and speech models.},
+	address = {Atlanta, GA},
+	author = {Xu, Ran},
+	date-added = {2021-04-14 15:51:03 -0400},
+	date-modified = {2021-04-14 16:12:42 -0400},
+	keywords = {emorynlp},
+	note = {Undergraduate Honors Thesis, Emory University, Atlanta, GA, 2021.},
+	school = {Emory University},
+	title = {{Analysis of Deep Learning-based Speech and Text Models for Early Detection of Alzheimer's Disease}},
+	url_slides = {https://www.researchgate.net/publication/350874421_Analysis_of_Deep_Learning-based_Speech_and_Text_Models_for_Early_Detection_of_Alzheimer's_Disease},
+	year = {2021},
+	Bdsk-Url-1 = {https://etd.library.emory.edu/view/record/pid/emory:rj97r}}
 
 @inproceedings{guo:21a,
 	abstract = {We present a novel deep learning-based frame-work to generate embedding representations offine-grained emotions that can be used to computationally describe psychological models ofemotions.  Our framework integrates a contex-tualized embedding encoder with a multi-headprobing model that enables to interpret dynam-ically learned representations optimized for anemotion classification task. Our model is eval-uated on the Empathetic Dialogue dataset andshows the state-of-the-art result for classifying32 emotions.  Our layer analysis can derive anemotion graph to depict hierarchical relationsamong the emotions.  Our emotion representa-tions can be used to generate an emotion wheeldirectly comparable to the one from Plutchik'smodel, and also augment the values of missingemotions in the PAD emotional state model.},
